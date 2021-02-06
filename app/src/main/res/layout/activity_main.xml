@@ -19,6 +19,7 @@
         android:textSize="20dp"
         />
     <EditText
+        android:id="@+id/Edittext_Age_Main"
         android:layout_width="match_parent"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="5dp"
@@ -56,6 +57,7 @@
 
 
     <Button
+        android:id="@+id/Button_Start_Main"
         android:layout_marginTop="50dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
