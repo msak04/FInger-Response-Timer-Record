@@ -21,7 +21,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
         <Button
             android:id="@+id/button_ball_12_rrw"
@@ -29,7 +29,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
         <Button
             android:id="@+id/button_ball_13_rrw"
@@ -37,7 +37,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
         <Button
             android:id="@+id/button_ball_14_rrw"
@@ -45,7 +45,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
         <Button
             android:id="@+id/button_ball_15_rrw"
@@ -53,7 +53,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
         <Button
             android:id="@+id/button_ball_16_rrw"
@@ -61,7 +61,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
     </LinearLayout>
 
@@ -78,7 +78,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
         <Button
             android:id="@+id/button_ball_22_rrw"
@@ -86,7 +86,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
         <Button
             android:id="@+id/button_ball_23_rrw"
@@ -94,7 +94,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
         <Button
             android:id="@+id/button_ball_24_rrw"
@@ -102,7 +102,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
         <Button
             android:id="@+id/button_ball_25_rrw"
@@ -110,7 +110,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
         <Button
             android:id="@+id/button_ball_26_rrw"
@@ -118,7 +118,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
     </LinearLayout>
 
@@ -136,7 +136,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
         <Button
             android:id="@+id/button_ball_32_rrw"
@@ -144,7 +144,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
         <Button
             android:id="@+id/button_ball_33_rrw"
@@ -152,7 +152,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
         <Button
             android:id="@+id/button_ball_34_rrw"
@@ -160,7 +160,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
         <Button
             android:id="@+id/button_ball_35_rrw"
@@ -168,7 +168,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
         <Button
             android:id="@+id/button_ball_36_rrw"
@@ -176,7 +176,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
     </LinearLayout>
 
@@ -194,7 +194,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
         <Button
             android:id="@+id/button_ball_42_rrw"
@@ -202,7 +202,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
         <Button
             android:id="@+id/button_ball_43_rrw"
@@ -210,7 +210,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
         <Button
             android:id="@+id/button_ball_44_rrw"
@@ -218,7 +218,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
         <Button
             android:id="@+id/button_ball_45_rrw"
@@ -226,7 +226,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
         <Button
             android:id="@+id/button_ball_46_rrw"
@@ -234,7 +234,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
     </LinearLayout>
 
@@ -252,7 +252,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
         <Button
             android:id="@+id/button_ball_52_rrw"
@@ -260,7 +260,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
         <Button
             android:id="@+id/button_ball_53_rrw"
@@ -268,7 +268,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
         <Button
             android:id="@+id/button_ball_54_rrw"
@@ -276,7 +276,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
         <Button
             android:id="@+id/button_ball_55_rrw"
@@ -284,7 +284,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
         <Button
             android:id="@+id/button_ball_56_rrw"
@@ -292,7 +292,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
 
     </LinearLayout>
@@ -311,7 +311,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
         <Button
             android:id="@+id/button_ball_62_rrw"
@@ -319,7 +319,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
         <Button
             android:id="@+id/button_ball_63_rrw"
@@ -327,7 +327,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
         <Button
             android:id="@+id/button_ball_64_rrw"
@@ -335,7 +335,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
         <Button
             android:id="@+id/button_ball_65_rrw"
@@ -343,7 +343,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
         <Button
             android:id="@+id/button_ball_66_rrw"
@@ -351,8 +351,32 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
-            android:visibility="visible"
+            android:visibility="invisible"
             />
     </LinearLayout>
+    <Button
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/button_start_rrw"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button_background"
+        android:text="Start"
+        android:textColor="@color/white"
+
+        />
+    <Button
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:id="@+id/button_finish_rrw"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/button_background"
+    android:text="Finish"
+    android:visibility="invisible"
+    android:textColor="@color/white"
+    />
 
 </LinearLayout>
