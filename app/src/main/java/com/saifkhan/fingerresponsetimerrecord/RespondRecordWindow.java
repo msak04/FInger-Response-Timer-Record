@@ -21,6 +21,11 @@ public class RespondRecordWindow extends AppCompatActivity {
     String age=null, gender=null;
     String[] timearray= {"John","Tim","Sam","Ben"};
     List nameList = new ArrayList<String>(Arrays.asList(timearray));
+
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
+    DatabaseReference myRef = database.getReference("DATA");
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,16 +36,18 @@ public class RespondRecordWindow extends AppCompatActivity {
         B11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                RespondData savedata = new RespondData(age,gender,nameList);
+
                 Bundle extras = getIntent().getExtras();
                 if (extras != null) {
                     age = extras.getString("age");
                     gender = extras.getString("gender");
 
                 }
+                String userid = String.valueOf(System.currentTimeMillis());
+                RespondData savedata = new RespondData(age,gender,nameList);//
+                DatabaseReference myRef = database.getReference("DATA");
                 Toast.makeText(getApplicationContext(),"Age:"+age+"; Gender:"+gender, Toast.LENGTH_SHORT).show();
-                DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference("finger-response-timer-record-default-rtdb:") ;
-                mDatabase.setValue(savedata);
+                myRef.child(gender).child(age).child(userid).setValue(savedata);
 
             }
         });

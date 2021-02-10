@@ -3,14 +3,15 @@ package com.saifkhan.fingerresponsetimerrecord;
 import java.util.List;
 
 public class RespondData {
-    String age,gender;
-    List timearray;
+    private String age;
+    private String gender;
+   private List timearray;
 
     public RespondData()
     {
 
     }
-    public RespondData(String age, String gender, List timearray)
+    public RespondData(String age, String gender, List timearray)//, List timearray
     {
         this.age = age;
         this.gender=gender;
@@ -37,7 +38,7 @@ public class RespondData {
         return timearray;
     }
 
-    public void settimeArray(List array) {
-        this.timearray = array;
+    public void settimeArray(List timearray) {
+        this.timearray = timearray;
     }
 }
