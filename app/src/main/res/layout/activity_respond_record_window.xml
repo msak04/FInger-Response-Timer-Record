@@ -16,48 +16,56 @@
         android:gravity="center"
         >
         <Button
-            android:id="@+id/button_ball_11_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_00"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
             android:visibility="invisible"
             />
         <Button
-            android:id="@+id/button_ball_12_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_01"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
             android:visibility="invisible"
             />
         <Button
-            android:id="@+id/button_ball_13_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_02"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
             android:visibility="invisible"
             />
         <Button
-            android:id="@+id/button_ball_14_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_03"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
             android:visibility="invisible"
             />
         <Button
-            android:id="@+id/button_ball_15_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_04"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
             android:visibility="invisible"
             />
         <Button
-            android:id="@+id/button_ball_16_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_05"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ball_shaped_button"
+            android:visibility="invisible"
+            />
+        <Button
+            android:id="@+id/button_ball_rrw_06"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ball_shaped_button"
+            android:visibility="invisible"
+            />
+        <Button
+            android:id="@+id/button_ball_rrw_07"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
@@ -73,48 +81,56 @@
         android:gravity="center"
         >
         <Button
-            android:id="@+id/button_ball_21_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_10"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
             android:visibility="invisible"
             />
         <Button
-            android:id="@+id/button_ball_22_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_11"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
             android:visibility="invisible"
             />
         <Button
-            android:id="@+id/button_ball_23_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_12"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
             android:visibility="invisible"
             />
         <Button
-            android:id="@+id/button_ball_24_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_13"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
             android:visibility="invisible"
             />
         <Button
-            android:id="@+id/button_ball_25_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_14"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
             android:visibility="invisible"
             />
         <Button
-            android:id="@+id/button_ball_26_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_15"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ball_shaped_button"
+            android:visibility="invisible"
+            />
+        <Button
+            android:id="@+id/button_ball_rrw_16"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ball_shaped_button"
+            android:visibility="invisible"
+            />
+        <Button
+            android:id="@+id/button_ball_rrw_17"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
@@ -131,48 +147,56 @@
         android:gravity="center"
         >
         <Button
-            android:id="@+id/button_ball_31_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_20"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
             android:visibility="invisible"
             />
         <Button
-            android:id="@+id/button_ball_32_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_21"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
             android:visibility="invisible"
             />
         <Button
-            android:id="@+id/button_ball_33_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_22"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
             android:visibility="invisible"
             />
         <Button
-            android:id="@+id/button_ball_34_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_23"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
             android:visibility="invisible"
             />
         <Button
-            android:id="@+id/button_ball_35_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_24"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
             android:visibility="invisible"
             />
         <Button
-            android:id="@+id/button_ball_36_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_25"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ball_shaped_button"
+            android:visibility="invisible"
+            />
+        <Button
+            android:id="@+id/button_ball_rrw_26"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ball_shaped_button"
+            android:visibility="invisible"
+            />
+        <Button
+            android:id="@+id/button_ball_rrw_27"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
@@ -189,53 +213,62 @@
         android:gravity="center"
         >
         <Button
-            android:id="@+id/button_ball_41_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_30"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
             android:visibility="invisible"
             />
         <Button
-            android:id="@+id/button_ball_42_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_31"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
             android:visibility="invisible"
             />
         <Button
-            android:id="@+id/button_ball_43_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_32"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
             android:visibility="invisible"
             />
         <Button
-            android:id="@+id/button_ball_44_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_33"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
             android:visibility="invisible"
             />
         <Button
-            android:id="@+id/button_ball_45_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_34"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
             android:visibility="invisible"
             />
         <Button
-            android:id="@+id/button_ball_46_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_35"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
             android:visibility="invisible"
             />
+        <Button
+            android:id="@+id/button_ball_rrw_36"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ball_shaped_button"
+            android:visibility="invisible"
+            />
+        <Button
+            android:id="@+id/button_ball_rrw_37"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ball_shaped_button"
+            android:visibility="invisible"
+            />
+
     </LinearLayout>
 
 
@@ -247,48 +280,56 @@
         android:gravity="center"
         >
         <Button
-            android:id="@+id/button_ball_51_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_40"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
             android:visibility="invisible"
             />
         <Button
-            android:id="@+id/button_ball_52_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_41"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ball_shaped_button"
+            android:visibility="invisible"
+            />
+
+        <Button
+            android:id="@+id/button_ball_rrw_42"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ball_shaped_button"
+            android:visibility="invisible" />
+        <Button
+            android:id="@+id/button_ball_rrw_43"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
             android:visibility="invisible"
             />
         <Button
-            android:id="@+id/button_ball_53_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_44"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
             android:visibility="invisible"
             />
         <Button
-            android:id="@+id/button_ball_54_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_45"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
             android:visibility="invisible"
             />
         <Button
-            android:id="@+id/button_ball_55_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_46"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
             android:visibility="invisible"
             />
         <Button
-            android:id="@+id/button_ball_56_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_47"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
@@ -306,48 +347,186 @@
         android:gravity="center"
         >
         <Button
-            android:id="@+id/button_ball_61_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_50"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
             android:visibility="invisible"
             />
         <Button
-            android:id="@+id/button_ball_62_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_51"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
             android:visibility="invisible"
             />
         <Button
-            android:id="@+id/button_ball_63_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_52"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
             android:visibility="invisible"
             />
         <Button
-            android:id="@+id/button_ball_64_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_53"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
             android:visibility="invisible"
             />
         <Button
-            android:id="@+id/button_ball_65_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_54"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"
             android:visibility="invisible"
             />
         <Button
-            android:id="@+id/button_ball_66_rrw"
-            android:layout_margin="5dp"
+            android:id="@+id/button_ball_rrw_55"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ball_shaped_button"
+            android:visibility="invisible"
+            />
+        <Button
+            android:id="@+id/button_ball_rrw_56"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ball_shaped_button"
+            android:visibility="invisible"
+            />
+        <Button
+
+            android:id="@+id/button_ball_rrw_57"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ball_shaped_button"
+            android:visibility="invisible"
+            />
+    </LinearLayout>
+    <!--ROW 7-->
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/button_ball_rrw_60"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ball_shaped_button"
+            android:visibility="invisible"
+            />
+        <Button
+
+            android:id="@+id/button_ball_rrw_61"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ball_shaped_button"
+            android:visibility="invisible"
+            />
+        <Button
+            android:id="@+id/button_ball_rrw_62"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ball_shaped_button"
+            android:visibility="invisible"
+            />
+        <Button
+            android:id="@+id/button_ball_rrw_63"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ball_shaped_button"
+            android:visibility="invisible"
+            />
+        <Button
+            android:id="@+id/button_ball_rrw_64"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ball_shaped_button"
+            android:visibility="invisible"
+            />
+        <Button
+            android:id="@+id/button_ball_rrw_65"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ball_shaped_button"
+            android:visibility="invisible"
+            />
+        <Button
+            android:id="@+id/button_ball_rrw_66"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ball_shaped_button"
+            android:visibility="invisible"
+            />
+        <Button
+            android:id="@+id/button_ball_rrw_67"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ball_shaped_button"
+            android:visibility="invisible"
+            />
+    </LinearLayout>
+    <!--ROW 8-->
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/button_ball_rrw_70"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ball_shaped_button"
+            android:visibility="invisible"
+            />
+        <Button
+            android:id="@+id/button_ball_rrw_71"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ball_shaped_button"
+            android:visibility="invisible"
+            />
+        <Button
+            android:id="@+id/button_ball_rrw_72"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ball_shaped_button"
+            android:visibility="invisible"
+            />
+        <Button
+            android:id="@+id/button_ball_rrw_73"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ball_shaped_button"
+            android:visibility="invisible"
+            />
+        <Button
+            android:id="@+id/button_ball_rrw_74"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ball_shaped_button"
+            android:visibility="invisible"
+            />
+        <Button
+            android:id="@+id/button_ball_rrw_75"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ball_shaped_button"
+            android:visibility="invisible"
+            />
+        <Button
+            android:id="@+id/button_ball_rrw_76"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ball_shaped_button"
+            android:visibility="invisible"
+            />
+        <Button
+            android:id="@+id/button_ball_rrw_77"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ball_shaped_button"

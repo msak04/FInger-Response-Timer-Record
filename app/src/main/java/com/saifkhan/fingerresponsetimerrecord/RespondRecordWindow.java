@@ -15,9 +15,14 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class RespondRecordWindow extends AppCompatActivity {
+public class RespondRecordWindow extends AppCompatActivity implements View.OnClickListener {
 
-    Button BStart,B11,B22,B33,B44,B55,B66,BFinish;
+    Button BStart,BFinish;
+    int RandVar1,RandVar2;
+
+    private Button [][] B = new Button[8][8];
+
+
     String age=null, gender=null;
     List timeList = new ArrayList<String>();
     long previousTime, currentTime,timeDuretion;
@@ -35,108 +40,64 @@ public class RespondRecordWindow extends AppCompatActivity {
         //Property i have to store in final button
        /*
 */
+        for(int i=0; i<8;i++){
+            for(int j=0;j<8;j++)
+            {
+                String buttonID = "button_ball_rrw_"+i+j;
+                int ResID = getResources().getIdentifier(buttonID,"id",getPackageName());
+                B[i][j] = findViewById(ResID);
+                B[i][j].setOnClickListener(this);
+            }
+        }
         BStart = findViewById(R.id.button_start_rrw);
-        B11 = findViewById(R.id.button_ball_11_rrw);
-        B22 = findViewById(R.id.button_ball_22_rrw);
-        B33 = findViewById(R.id.button_ball_33_rrw);
-        B44 = findViewById(R.id.button_ball_44_rrw);
-        B55 = findViewById(R.id.button_ball_55_rrw);
-        B66 = findViewById(R.id.button_ball_66_rrw);
+
         BFinish = findViewById(R.id.button_finish_rrw);
+        RandVar1= 1 + (int)(Math.random() * 8);
+        RandVar2= 1 + (int)(Math.random() * 8);
 
         BStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            B11.setVisibility(View.VISIBLE);
+            B[RandVar1][RandVar2].setVisibility(View.VISIBLE);
             BStart.setVisibility(View.INVISIBLE);
             //Record Time
             previousTime = System.currentTimeMillis();
             }
         });
 
-        B11.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                B22.setVisibility(View.VISIBLE);
-                B11.setVisibility(View.INVISIBLE);
+        for(int i=0;i<90;i++)
+        {
 
-                //Record Time
-                currentTime= System.currentTimeMillis();
-                timeDuretion= currentTime-previousTime;
-                timeList.add(timeDuretion);
-                previousTime = System.currentTimeMillis();
-            }
-        });
-        B22.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                B33.setVisibility(View.VISIBLE);
-                B22.setVisibility(View.INVISIBLE);
-                //Record Time
-                currentTime= System.currentTimeMillis();
-                timeDuretion= currentTime-previousTime;
-                timeList.add(timeDuretion);
-                previousTime = System.currentTimeMillis();
-            }
-        });
-        B33.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                B44.setVisibility(View.VISIBLE);
-                B33.setVisibility(View.INVISIBLE);
-                //Record Time
-                currentTime= System.currentTimeMillis();
-                timeDuretion= currentTime-previousTime;
-                timeList.add(timeDuretion);
-                previousTime = System.currentTimeMillis();
-            }
-        });
-        B44.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                B55.setVisibility(View.VISIBLE);
-                B44.setVisibility(View.INVISIBLE);
-                //Record Time
-                currentTime= System.currentTimeMillis();
-                timeDuretion= currentTime-previousTime;
-                timeList.add(timeDuretion);
-                previousTime = System.currentTimeMillis();
+            B[RandVar1][RandVar2].setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
 
-            }
-        });
-        B55.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                B66.setVisibility(View.VISIBLE);
-                B55.setVisibility(View.INVISIBLE);
-                //Record Time
-                currentTime= System.currentTimeMillis();
-                timeDuretion= currentTime-previousTime;
-                timeList.add(timeDuretion);
-                previousTime = System.currentTimeMillis();
+                        B[RandVar1][RandVar2].setVisibility(View.INVISIBLE);
+                        RandVar1= 1 + (int)(Math.random() * 8);
+                        RandVar2= 1 + (int)(Math.random() * 8);
+                        B[RandVar1][RandVar2].setVisibility(View.VISIBLE);
+                        //Record Time
+                        currentTime= System.currentTimeMillis();
+                        timeDuretion= currentTime-previousTime;
+                        timeList.add(timeDuretion);
+                        previousTime = System.currentTimeMillis();
+                }
+            });
 
-            }
-        });
-        B66.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                BFinish.setVisibility(View.VISIBLE);
-                B66.setVisibility(View.INVISIBLE);
-                //Record Time
-                currentTime= System.currentTimeMillis();
-                timeDuretion= currentTime-previousTime;
-                timeList.add(timeDuretion);
-                previousTime = System.currentTimeMillis();
-            }
-        });
+//            if(i==89){
+//                B[m][n].setVisibility(View.INVISIBLE);
+//                BFinish.setVisibility(View.VISIBLE);
+//                //Record Time
+//                currentTime= System.currentTimeMillis();
+//                timeDuretion= currentTime-previousTime;
+//                timeList.add(timeDuretion);
+//            }
+        }
+
         BFinish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                //Record Time
-                currentTime= System.currentTimeMillis();
-                timeDuretion= currentTime-previousTime;
-                timeList.add(timeDuretion);
                 // Get age and gender from previous activity
                 Bundle extras = getIntent().getExtras();
 
@@ -155,6 +116,11 @@ public class RespondRecordWindow extends AppCompatActivity {
             }
         });
 
+
+    }
+
+    @Override
+    public void onClick(View v) {
 
     }
 }
