@@ -18,7 +18,7 @@ import java.util.List;
 public class RespondRecordWindow extends AppCompatActivity implements View.OnClickListener {
 
     Button BStart,BFinish;
-    int RandVar1,RandVar2;
+    int RandNum1,RandNum2;
 
     private Button [][] B = new Button[8][8];
 
@@ -40,6 +40,8 @@ public class RespondRecordWindow extends AppCompatActivity implements View.OnCli
         //Property i have to store in final button
        /*
 */
+        RandNum1 =  0+ (int)(Math.random() * 7);
+        RandNum2 =  0+ (int)(Math.random() * 7);
         for(int i=0; i<8;i++){
             for(int j=0;j<8;j++)
             {
@@ -52,30 +54,26 @@ public class RespondRecordWindow extends AppCompatActivity implements View.OnCli
         BStart = findViewById(R.id.button_start_rrw);
 
         BFinish = findViewById(R.id.button_finish_rrw);
-        RandVar1= 1 + (int)(Math.random() * 8);
-        RandVar2= 1 + (int)(Math.random() * 8);
 
         BStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            B[RandVar1][RandVar2].setVisibility(View.VISIBLE);
+            B[RandNum1][RandNum2].setVisibility(View.VISIBLE);
             BStart.setVisibility(View.INVISIBLE);
             //Record Time
             previousTime = System.currentTimeMillis();
             }
         });
 
-        for(int i=0;i<90;i++)
-        {
-
-            B[RandVar1][RandVar2].setOnClickListener(new View.OnClickListener() {
+            //1--------------------------------------------------------------------------------------------------------------------------------------------
+            B[RandNum1][RandNum2].setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
 
-                        B[RandVar1][RandVar2].setVisibility(View.INVISIBLE);
-                        RandVar1= 1 + (int)(Math.random() * 8);
-                        RandVar2= 1 + (int)(Math.random() * 8);
-                        B[RandVar1][RandVar2].setVisibility(View.VISIBLE);
+                        B[RandNum1][RandNum2].setVisibility(View.INVISIBLE);
+                        RandNum1 =  0+ (int)(Math.random() * 7);
+                        RandNum2 =  0+ (int)(Math.random() * 7);
+                        B[ RandNum1][RandNum2].setVisibility(View.VISIBLE);
                         //Record Time
                         currentTime= System.currentTimeMillis();
                         timeDuretion= currentTime-previousTime;
@@ -84,20 +82,13 @@ public class RespondRecordWindow extends AppCompatActivity implements View.OnCli
                 }
             });
 
-//            if(i==89){
-//                B[m][n].setVisibility(View.INVISIBLE);
-//                BFinish.setVisibility(View.VISIBLE);
-//                //Record Time
-//                currentTime= System.currentTimeMillis();
-//                timeDuretion= currentTime-previousTime;
-//                timeList.add(timeDuretion);
-//            }
-        }
-
         BFinish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                //Record Time
+                currentTime= System.currentTimeMillis();
+                timeDuretion= currentTime-previousTime;
+                timeList.add(timeDuretion);
                 // Get age and gender from previous activity
                 Bundle extras = getIntent().getExtras();
 
