@@ -12,11 +12,9 @@ import android.widget.RadioButton;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    String age,gender;
+    String age,gender,id;
     EditText Eage;
     Button Bstart;
-    public static final String AGE = "ageKey";
-    public static final String GENDER = "genderKey";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,11 +32,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //Shared Preferrence have to put them in a button
                 age = Eage.getText().toString();
+                id = String.valueOf(System.currentTimeMillis());
 //              editor.putString(AGE, age);
 //              editor.putString(GENDER, gender);
-                Intent intent = new Intent(MainActivity.this, RespondRecordWindow.class);
+                Intent intent = new Intent(MainActivity.this, ThumbFinger.class);
                 intent.putExtra("age",age);
                 intent.putExtra("gender",gender);
+                intent.putExtra("id",id);
                 startActivity(intent);
             }
         });

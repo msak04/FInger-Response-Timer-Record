@@ -10,7 +10,31 @@
     android:gravity="center"
     >
     <TextView
-        android:layout_marginTop="10dp"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:background="@drawable/button_background"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="COMP 7920-A1"
+        />
+    <TextView
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/button_background"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="We are studying Fitts' Law, a model of human motor response developed by Paul Fitts in 1954. Fitts' Law has been applied by Human Factors and Ergonomics engineers to thousands of designs ranging from assembly lines to computer interfaces. Since Fitts' model is so influential, it is important to verify its accuracy and to consider alternative models.
+We've developed an android application which is an interactive experiment that allows to see the throughput of the Thumb and Index finger. In this experiment, you’re require to spare 3 minutes to click on 180 target points using your Thumb and Index Finger.
+First please input your AGE and GENDER and select NEXT -
+
+"
+        />
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
@@ -30,7 +54,7 @@
         android:inputType="number"
         />
     <TextView
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
@@ -58,7 +82,7 @@
 
     <Button
         android:id="@+id/Button_Start_Main"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="20dp"

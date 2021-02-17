@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FIngerResponseTimerRecord">
-        <activity android:name=".RespondRecordWindow"></activity>
+        <activity android:name=".EndWindow"></activity>
+        <activity android:name=".IndexFinger" />
+        <activity android:name=".ThumbFinger" />
+        <activity android:name=".RespondRecordThumbSmall" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
