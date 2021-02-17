@@ -15,7 +15,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RespondRecordThumbMedium extends AppCompatActivity implements View.OnClickListener {
-    Button BStart;
     private Button [][] B = new Button[8][8];
     String age=null, gender=null, userid = null;
     List timeList = new ArrayList<String>();
