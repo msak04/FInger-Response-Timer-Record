@@ -2,6 +2,7 @@ package com.saifkhan.fingerresponsetimerrecord;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,16 +16,11 @@ import java.util.List;
 
 public class RespondRecordThumbSmall extends AppCompatActivity implements View.OnClickListener {
 
-    Button BStart,BFinish;
-
+    Button BStart;
     private Button [][] B = new Button[8][8];
-
-
     String age=null, gender=null, userid = null;
     List timeList = new ArrayList<String>();
     long previousTime, currentTime,timeDuretion;
-
-
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference myRef = database.getReference("DATA");
 
@@ -47,9 +43,6 @@ public class RespondRecordThumbSmall extends AppCompatActivity implements View.O
             }
         }
         BStart = findViewById(R.id.button_start_rrw);
-
-        BFinish = findViewById(R.id.button_finish_rrw);
-
         BStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -239,7 +232,8 @@ public class RespondRecordThumbSmall extends AppCompatActivity implements View.O
                 timeList.add(timeDuretion);
                 previousTime = System.currentTimeMillis();
             }
-        });B[0][3].setOnClickListener(new View.OnClickListener() {
+        });
+        B[0][3].setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -449,7 +443,8 @@ public class RespondRecordThumbSmall extends AppCompatActivity implements View.O
                 timeList.add(timeDuretion);
                 previousTime = System.currentTimeMillis();
             }
-        });B[3][3].setOnClickListener(new View.OnClickListener() {
+        });
+        B[3][3].setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -488,7 +483,12 @@ public class RespondRecordThumbSmall extends AppCompatActivity implements View.O
                 RespondData savedata = new RespondData(age,gender,timeList);
                 DatabaseReference myRef = database.getReference("DATA");
                 Toast.makeText(getApplicationContext(),"Age:"+age+"; Gender:"+gender, Toast.LENGTH_SHORT).show();
-                myRef.child(userid).child("ThumbFinger").child("small").setValue(savedata);
+                myRef.child(userid).child("ThumbFinger").child("S").setValue(savedata);
+                Intent intent = new Intent(RespondRecordThumbSmall.this, RespondRecordThumbMedium.class);
+                intent.putExtra("age",age);
+                intent.putExtra("gender",gender);
+                intent.putExtra("id",userid);
+                startActivity(intent);
             }
         });
 //        B[4][0].setOnClickListener(new View.OnClickListener() {

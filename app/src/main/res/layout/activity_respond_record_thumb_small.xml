@@ -2,9 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RespondRecordThumbSmall"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RespondRecordThumbSmall"
     android:orientation="vertical"
     android:gravity="center"
     >
@@ -545,17 +545,6 @@
         android:textColor="@color/white"
 
         />
-    <Button
-    android:layout_marginLeft="20dp"
-    android:layout_marginRight="20dp"
-    android:id="@+id/button_finish_rrw"
-    android:layout_margin="5dp"
-    android:layout_width="match_parent"
-    android:layout_height="50dp"
-    android:background="@drawable/button_background"
-    android:text="Finish"
-    android:visibility="invisible"
-    android:textColor="@color/white"
-    />
+
 
 </LinearLayout>
