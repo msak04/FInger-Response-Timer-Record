@@ -14,8 +14,10 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RespondRecordThumbLarge extends AppCompatActivity implements View.OnClickListener {
-    private Button[][] B = new Button[8][8];
+public class RespondRecordIndexSmall extends AppCompatActivity implements View.OnClickListener {
+
+    Button BStart;
+    private Button [][] B = new Button[8][8];
     String age=null, gender=null, userid = null;
     List timeList = new ArrayList<String>();
     long previousTime, currentTime,timeDuretion;
@@ -24,246 +26,27 @@ public class RespondRecordThumbLarge extends AppCompatActivity implements View.O
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_respond_record_thumb_large);
+        setContentView(R.layout.activity_respond_record_index_small);
+
         for(int i=0; i<8;i++){
             for(int j=0;j<8;j++)
             {
-                String buttonID = "button_ball_RRTL_"+i+j;
+                String buttonID = "button_ball_rrw_"+i+j;
                 int ResID = getResources().getIdentifier(buttonID,"id",getPackageName());
                 B[i][j] = findViewById(ResID);
                 B[i][j].setOnClickListener(this);
             }
         }
-        B[3][3].setOnClickListener(new View.OnClickListener() {
+        BStart = findViewById(R.id.button_start_rrw);
+        BStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                B[3][3].setVisibility(View.INVISIBLE);
-
-                B[7][6].setVisibility(View.VISIBLE);
-                //Record Time
-                previousTime = System.currentTimeMillis();
-            }
-        });
-        //31=====================================================================================================
-        B[7][6].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                B[7][6].setVisibility(View.INVISIBLE);
-                B[4][0].setVisibility(View.VISIBLE);
-                //Record Time
-                currentTime= System.currentTimeMillis();
-                timeDuretion= currentTime-previousTime;
-                timeList.add(timeDuretion);
-                previousTime = System.currentTimeMillis();
-
-            }
-        });
-        B[4][0].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                B[4][0].setVisibility(View.INVISIBLE);
-
-                B[6][4].setVisibility(View.VISIBLE);
-                //Record Time
-                currentTime= System.currentTimeMillis();
-                timeDuretion= currentTime-previousTime;
-                timeList.add(timeDuretion);
-                previousTime = System.currentTimeMillis();
-            }
-        });B[6][4].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                B[6][4].setVisibility(View.INVISIBLE);
-
-                B[0][6].setVisibility(View.VISIBLE);
-                //Record Time
-                currentTime= System.currentTimeMillis();
-                timeDuretion= currentTime-previousTime;
-                timeList.add(timeDuretion);
-                previousTime = System.currentTimeMillis();
-            }
-        });B[0][6].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                B[0][6].setVisibility(View.INVISIBLE);
-
-                B[1][6].setVisibility(View.VISIBLE);
-                //Record Time
-                currentTime= System.currentTimeMillis();
-                timeDuretion= currentTime-previousTime;
-                timeList.add(timeDuretion);
-                previousTime = System.currentTimeMillis();
-            }
-        });B[1][6].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                B[1][6].setVisibility(View.INVISIBLE);
-
-                B[6][7].setVisibility(View.VISIBLE);
-                //Record Time
-                currentTime= System.currentTimeMillis();
-                timeDuretion= currentTime-previousTime;
-                timeList.add(timeDuretion);
-                previousTime = System.currentTimeMillis();
-            }
-        });B[6][7].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                B[6][7].setVisibility(View.INVISIBLE);
-
-                B[6][0].setVisibility(View.VISIBLE);
-                //Record Time
-                currentTime= System.currentTimeMillis();
-                timeDuretion= currentTime-previousTime;
-                timeList.add(timeDuretion);
-                previousTime = System.currentTimeMillis();
-            }
-        });B[6][0].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                B[6][0].setVisibility(View.INVISIBLE);
-
-                B[5][1].setVisibility(View.VISIBLE);
-                //Record Time
-                currentTime= System.currentTimeMillis();
-                timeDuretion= currentTime-previousTime;
-                timeList.add(timeDuretion);
-                previousTime = System.currentTimeMillis();
-            }
-        });B[5][1].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                B[5][1].setVisibility(View.INVISIBLE);
-
-                B[1][2].setVisibility(View.VISIBLE);
-                //Record Time
-                currentTime= System.currentTimeMillis();
-                timeDuretion= currentTime-previousTime;
-                timeList.add(timeDuretion);
-                previousTime = System.currentTimeMillis();
-            }
-        });B[1][2].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                B[1][2].setVisibility(View.INVISIBLE);
-
-                B[4][2].setVisibility(View.VISIBLE);
-                //Record Time
-                currentTime= System.currentTimeMillis();
-                timeDuretion= currentTime-previousTime;
-                timeList.add(timeDuretion);
-                previousTime = System.currentTimeMillis();
-            }
-        });B[4][2].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                B[4][2].setVisibility(View.INVISIBLE);
-
-                B[1][7].setVisibility(View.VISIBLE);
-                //Record Time
-                currentTime= System.currentTimeMillis();
-                timeDuretion= currentTime-previousTime;
-                timeList.add(timeDuretion);
-                previousTime = System.currentTimeMillis();
-            }
-        });
-        //41===============================================================================================================
-        B[1][7].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                B[1][7].setVisibility(View.INVISIBLE);
-
-                B[6][5].setVisibility(View.VISIBLE);
-                //Record Time
-                currentTime= System.currentTimeMillis();
-                timeDuretion= currentTime-previousTime;
-                timeList.add(timeDuretion);
-                previousTime = System.currentTimeMillis();
-            }
-        });
-        B[6][5].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                B[6][5].setVisibility(View.INVISIBLE);
-
-                B[7][0].setVisibility(View.VISIBLE);
-                //Record Time
-                currentTime= System.currentTimeMillis();
-                timeDuretion= currentTime-previousTime;
-                timeList.add(timeDuretion);
-                previousTime = System.currentTimeMillis();
-            }
-        });
-        B[7][0].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                B[7][0].setVisibility(View.INVISIBLE);
-
-                B[7][1].setVisibility(View.VISIBLE);
-                //Record Time
-                currentTime= System.currentTimeMillis();
-                timeDuretion= currentTime-previousTime;
-                timeList.add(timeDuretion);
-                previousTime = System.currentTimeMillis();
-            }
-        });
-        B[7][1].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                B[7][1].setVisibility(View.INVISIBLE);
-
-                B[7][4].setVisibility(View.VISIBLE);
-                //Record Time
-                currentTime= System.currentTimeMillis();
-                timeDuretion= currentTime-previousTime;
-                timeList.add(timeDuretion);
-                previousTime = System.currentTimeMillis();
-            }
-        });
-        B[7][4].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                B[7][4].setVisibility(View.INVISIBLE);
-
-                B[0][4].setVisibility(View.VISIBLE);
-                //Record Time
-                currentTime= System.currentTimeMillis();
-                timeDuretion= currentTime-previousTime;
-                timeList.add(timeDuretion);
-                previousTime = System.currentTimeMillis();
-            }
-        });
-        B[0][4].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                B[0][4].setVisibility(View.INVISIBLE);
-
                 B[4][4].setVisibility(View.VISIBLE);
+                BStart.setVisibility(View.INVISIBLE);
                 //Record Time
-                currentTime= System.currentTimeMillis();
-                timeDuretion= currentTime-previousTime;
-                timeList.add(timeDuretion);
                 previousTime = System.currentTimeMillis();
             }
         });
-
 
         //1--------------------------------------------------------------------------------------------------------------------------------------------
         B[4][4].setOnClickListener(new View.OnClickListener() {
@@ -450,10 +233,238 @@ public class RespondRecordThumbLarge extends AppCompatActivity implements View.O
             public void onClick(View v) {
 
                 B[0][3].setVisibility(View.INVISIBLE);
+
+                B[2][6].setVisibility(View.VISIBLE);
                 //Record Time
                 currentTime= System.currentTimeMillis();
                 timeDuretion= currentTime-previousTime;
                 timeList.add(timeDuretion);
+                previousTime = System.currentTimeMillis();
+            }
+        });B[2][6].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                B[2][6].setVisibility(View.INVISIBLE);
+
+                B[7][3].setVisibility(View.VISIBLE);
+                //Record Time
+                currentTime= System.currentTimeMillis();
+                timeDuretion= currentTime-previousTime;
+                timeList.add(timeDuretion);
+                previousTime = System.currentTimeMillis();
+            }
+        });B[7][3].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                B[7][3].setVisibility(View.INVISIBLE);
+
+                B[5][3].setVisibility(View.VISIBLE);
+                //Record Time
+                currentTime= System.currentTimeMillis();
+                timeDuretion= currentTime-previousTime;
+                timeList.add(timeDuretion);
+                previousTime = System.currentTimeMillis();
+            }
+        });B[5][3].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                B[5][3].setVisibility(View.INVISIBLE);
+
+                B[3][5].setVisibility(View.VISIBLE);
+                //Record Time
+                currentTime= System.currentTimeMillis();
+                timeDuretion= currentTime-previousTime;
+                timeList.add(timeDuretion);
+                previousTime = System.currentTimeMillis();
+            }
+        });B[3][5].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                B[3][5].setVisibility(View.INVISIBLE);
+
+                B[7][7].setVisibility(View.VISIBLE);
+                //Record Time
+                currentTime= System.currentTimeMillis();
+                timeDuretion= currentTime-previousTime;
+                timeList.add(timeDuretion);
+                previousTime = System.currentTimeMillis();
+            }
+        });B[7][7].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                B[7][7].setVisibility(View.INVISIBLE);
+
+                B[7][5].setVisibility(View.VISIBLE);
+                //Record Time
+                currentTime= System.currentTimeMillis();
+                timeDuretion= currentTime-previousTime;
+                timeList.add(timeDuretion);
+                previousTime = System.currentTimeMillis();
+            }
+        });B[7][5].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                B[7][5].setVisibility(View.INVISIBLE);
+
+                B[6][2].setVisibility(View.VISIBLE);
+                //Record Time
+                currentTime= System.currentTimeMillis();
+                timeDuretion= currentTime-previousTime;
+                timeList.add(timeDuretion);
+                previousTime = System.currentTimeMillis();
+            }
+        });
+        //21/////////////////////////////////////////////////////////////////////////================================
+        B[6][2].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                B[6][2].setVisibility(View.INVISIBLE);
+
+                B[1][3].setVisibility(View.VISIBLE);
+                //Record Time
+                currentTime= System.currentTimeMillis();
+                timeDuretion= currentTime-previousTime;
+                timeList.add(timeDuretion);
+                previousTime = System.currentTimeMillis();
+            }
+        });B[1][3].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                B[1][3].setVisibility(View.INVISIBLE);
+
+                B[1][5].setVisibility(View.VISIBLE);
+                //Record Time
+                currentTime= System.currentTimeMillis();
+                timeDuretion= currentTime-previousTime;
+                timeList.add(timeDuretion);
+                previousTime = System.currentTimeMillis();
+            }
+        });B[1][5].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                B[1][5].setVisibility(View.INVISIBLE);
+
+                B[2][0].setVisibility(View.VISIBLE);
+                //Record Time
+                currentTime= System.currentTimeMillis();
+                timeDuretion= currentTime-previousTime;
+                timeList.add(timeDuretion);
+                previousTime = System.currentTimeMillis();
+            }
+        });B[2][0].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                B[2][0].setVisibility(View.INVISIBLE);
+
+                B[0][2].setVisibility(View.VISIBLE);
+                //Record Time
+                currentTime= System.currentTimeMillis();
+                timeDuretion= currentTime-previousTime;
+                timeList.add(timeDuretion);
+                previousTime = System.currentTimeMillis();
+            }
+        });B[0][2].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                B[0][2].setVisibility(View.INVISIBLE);
+
+                B[5][0].setVisibility(View.VISIBLE);
+                //Record Time
+                currentTime= System.currentTimeMillis();
+                timeDuretion= currentTime-previousTime;
+                timeList.add(timeDuretion);
+                previousTime = System.currentTimeMillis();
+            }
+        });B[5][0].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                B[5][0].setVisibility(View.INVISIBLE);
+
+                B[6][1].setVisibility(View.VISIBLE);
+                //Record Time
+                currentTime= System.currentTimeMillis();
+                timeDuretion= currentTime-previousTime;
+                timeList.add(timeDuretion);
+                previousTime = System.currentTimeMillis();
+            }
+        });B[6][1].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                B[6][1].setVisibility(View.INVISIBLE);
+
+                B[0][0].setVisibility(View.VISIBLE);
+                //Record Time
+                currentTime= System.currentTimeMillis();
+                timeDuretion= currentTime-previousTime;
+                timeList.add(timeDuretion);
+                previousTime = System.currentTimeMillis();
+            }
+        });B[0][0].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                B[0][0].setVisibility(View.INVISIBLE);
+
+                B[1][1].setVisibility(View.VISIBLE);
+                //Record Time
+                currentTime= System.currentTimeMillis();
+                timeDuretion= currentTime-previousTime;
+                timeList.add(timeDuretion);
+                previousTime = System.currentTimeMillis();
+            }
+        });B[1][1].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                B[1][1].setVisibility(View.INVISIBLE);
+
+                B[3][3].setVisibility(View.VISIBLE);
+                //Record Time
+                currentTime= System.currentTimeMillis();
+                timeDuretion= currentTime-previousTime;
+                timeList.add(timeDuretion);
+                previousTime = System.currentTimeMillis();
+            }
+        });
+        B[3][3].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                B[3][3].setVisibility(View.INVISIBLE);
+
+                B[7][6].setVisibility(View.VISIBLE);
+                //Record Time
+                currentTime= System.currentTimeMillis();
+                timeDuretion= currentTime-previousTime;
+                timeList.add(timeDuretion);
+                previousTime = System.currentTimeMillis();
+            }
+        });
+        //31=====================================================================================================
+        B[7][6].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                B[7][6].setVisibility(View.INVISIBLE);
+                //B[4][0].setVisibility(View.VISIBLE);
+                //Record Time
+                currentTime= System.currentTimeMillis();
+                timeDuretion= currentTime-previousTime;
+                timeList.add(timeDuretion);
+                //previousTime = System.currentTimeMillis();
 
                 // Get age and gender from previous activity
                 Bundle extras = getIntent().getExtras();
@@ -467,14 +478,16 @@ public class RespondRecordThumbLarge extends AppCompatActivity implements View.O
                 RespondData savedata = new RespondData(age,gender,timeList);
                 DatabaseReference myRef = database.getReference("DATA");
                 //Toast.makeText(getApplicationContext(),"Age:"+age+"; Gender:"+gender, Toast.LENGTH_SHORT).show();
-                myRef.child(userid).child("ThumbFinger").child("L").setValue(savedata);
-                Intent intent = new Intent(RespondRecordThumbLarge.this, IndexFinger.class);
+                myRef.child(userid).child("IndexFinger").child("S").setValue(savedata);
+                Intent intent = new Intent(RespondRecordIndexSmall.this, RespondRecordIndexMedium.class);
                 intent.putExtra("age",age);
                 intent.putExtra("gender",gender);
                 intent.putExtra("id",userid);
                 startActivity(intent);
             }
         });
+
+
 
 
     }

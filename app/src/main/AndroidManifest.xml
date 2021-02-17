@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FIngerResponseTimerRecord">
-        <activity android:name=".ExitWindow"></activity>
+        <activity android:name=".RespondRecordIndexLarge"></activity>
+        <activity android:name=".RespondRecordIndexMedium" />
+        <activity android:name=".RespondRecordIndexSmall" />
+        <activity android:name=".ExitWindow" />
         <activity android:name=".RespondRecordThumbLarge" />
         <activity android:name=".RespondRecordThumbMedium" />
         <activity android:name=".EndWindow" />

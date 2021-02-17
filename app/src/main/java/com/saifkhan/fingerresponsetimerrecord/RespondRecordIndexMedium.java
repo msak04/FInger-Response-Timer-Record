@@ -14,21 +14,24 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RespondRecordThumbLarge extends AppCompatActivity implements View.OnClickListener {
+public class RespondRecordIndexMedium extends AppCompatActivity implements View.OnClickListener {
     private Button[][] B = new Button[8][8];
     String age=null, gender=null, userid = null;
     List timeList = new ArrayList<String>();
     long previousTime, currentTime,timeDuretion;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference myRef = database.getReference("DATA");
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_respond_record_thumb_large);
+        setContentView(R.layout.activity_respond_record_index_medium);
+
+
         for(int i=0; i<8;i++){
             for(int j=0;j<8;j++)
             {
-                String buttonID = "button_ball_RRTL_"+i+j;
+                String buttonID = "button_ball_RRTM_"+i+j;
                 int ResID = getResources().getIdentifier(buttonID,"id",getPackageName());
                 B[i][j] = findViewById(ResID);
                 B[i][j].setOnClickListener(this);
@@ -467,16 +470,14 @@ public class RespondRecordThumbLarge extends AppCompatActivity implements View.O
                 RespondData savedata = new RespondData(age,gender,timeList);
                 DatabaseReference myRef = database.getReference("DATA");
                 //Toast.makeText(getApplicationContext(),"Age:"+age+"; Gender:"+gender, Toast.LENGTH_SHORT).show();
-                myRef.child(userid).child("ThumbFinger").child("L").setValue(savedata);
-                Intent intent = new Intent(RespondRecordThumbLarge.this, IndexFinger.class);
+                myRef.child(userid).child("IndexFinger").child("M").setValue(savedata);
+                Intent intent = new Intent(RespondRecordIndexMedium.this, RespondRecordIndexLarge.class);
                 intent.putExtra("age",age);
                 intent.putExtra("gender",gender);
                 intent.putExtra("id",userid);
                 startActivity(intent);
             }
         });
-
-
     }
 
     @Override

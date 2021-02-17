@@ -14,7 +14,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RespondRecordThumbLarge extends AppCompatActivity implements View.OnClickListener {
+public class RespondRecordIndexLarge extends AppCompatActivity implements View.OnClickListener {
     private Button[][] B = new Button[8][8];
     String age=null, gender=null, userid = null;
     List timeList = new ArrayList<String>();
@@ -24,7 +24,7 @@ public class RespondRecordThumbLarge extends AppCompatActivity implements View.O
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_respond_record_thumb_large);
+        setContentView(R.layout.activity_respond_record_index_large);
         for(int i=0; i<8;i++){
             for(int j=0;j<8;j++)
             {
@@ -467,8 +467,8 @@ public class RespondRecordThumbLarge extends AppCompatActivity implements View.O
                 RespondData savedata = new RespondData(age,gender,timeList);
                 DatabaseReference myRef = database.getReference("DATA");
                 //Toast.makeText(getApplicationContext(),"Age:"+age+"; Gender:"+gender, Toast.LENGTH_SHORT).show();
-                myRef.child(userid).child("ThumbFinger").child("L").setValue(savedata);
-                Intent intent = new Intent(RespondRecordThumbLarge.this, IndexFinger.class);
+                myRef.child(userid).child("IndexFinger").child("L").setValue(savedata);
+                Intent intent = new Intent(RespondRecordIndexLarge.this, ExitWindow.class);
                 intent.putExtra("age",age);
                 intent.putExtra("gender",gender);
                 intent.putExtra("id",userid);

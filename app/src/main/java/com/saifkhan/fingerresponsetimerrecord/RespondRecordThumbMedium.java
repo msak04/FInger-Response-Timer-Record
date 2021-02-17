@@ -467,7 +467,7 @@ public class RespondRecordThumbMedium extends AppCompatActivity implements View.
                 //creating an unique user id
                 RespondData savedata = new RespondData(age,gender,timeList);
                 DatabaseReference myRef = database.getReference("DATA");
-                Toast.makeText(getApplicationContext(),"Age:"+age+"; Gender:"+gender, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(),"Age:"+age+"; Gender:"+gender, Toast.LENGTH_SHORT).show();
                 myRef.child(userid).child("ThumbFinger").child("M").setValue(savedata);
                 Intent intent = new Intent(RespondRecordThumbMedium.this, RespondRecordThumbLarge.class);
                 intent.putExtra("age",age);
